@@ -1,0 +1,117 @@
+.questions-group {
+    display: flex;
+    margin-bottom: 1.9em;
+    line-height: normal
+}
+
+.questions-group .question-year {
+    padding-top: 6px;
+    margin-right: 1.8em;
+    font-size: 1.6em;
+    opacity: .6
+}
+
+.questions-group .questions-list {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.questions-group .question-item {
+    border-bottom: 1px #7d828a dashed
+}
+
+.questions-group .question-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px 0
+}
+
+.questions-group .question-day {
+    flex-shrink: 0;
+    margin-left: 1em;
+    opacity: .6
+}
+
+.reply {
+    padding-left: 10%;
+    font-size: 0.8em;
+}
+
+.btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+.btn-reply:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btn-reply {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    }
+}
+
+.btn-like:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn-like:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn-like {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+#addReply {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#addReply span {
+    display: flex;
+    justify-content: stretch;
+    padding: 3px 0
+}
+
+#addReply input {
+    color: #333;
+    flex-grow: 1
+}
+
+#addReply textarea {
+    color: #333;
+    height: 10em
+}

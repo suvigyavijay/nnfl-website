@@ -1,0 +1,37 @@
+{{ define "header" }}
+{{ partialCached "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<main class="site-main section-inner thin animated fadeIn faster">
+    <h1>{{ .Title }}</h1>
+    <div id="questions">
+    </div>
+     <div class="thin">
+            <button class="btn btn-reply" onclick="addReply()"><i class="fas fa-plus"></i>&nbsp; New Question</button>
+        </div>
+
+        <div id="addReply" class="thin">
+            <span>
+                <label>Title: &nbsp;</label><input type="text" id="new-title">
+            </span>
+            <textarea id="new-text" placeholder="Markdown Supported!"></textarea>
+            <span>
+                <button class="btn btn-like" onclick="preview()"><i class="far fa-eye"></i>&nbsp; Preview</button>
+                &nbsp; <button class="btn btn-reply" onclick="postQuestion()"><i class="fas fa-share-square"></i>&nbsp; Submit</button>
+            </span>
+            <h2 id="preview-title"></h2>
+            <div id="preview-area"></div>
+        </div>
+</main>
+<script>
+    window.onload = () => {
+        getPinnedQuestions();
+        getQuestions();
+    }
+</script>
+{{ end }}
+
+{{ define "footer" }}
+{{ partialCached "footer.html" . }}
+{{ end }}
