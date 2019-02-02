@@ -43,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://test-nnfl.firebaseapp.com/resources/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://test-nnfl.firebaseapp.com/</loc>
     <priority>0</priority>
   </url>
